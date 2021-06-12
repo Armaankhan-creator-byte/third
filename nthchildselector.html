@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            nth child selector
+        </title>
+    </head>
+    <style>
+        .container{
+            display:block;
+            width: 20px;
+            margin: auto;
+        }
+        input[type='text']
+        {padding:20px;
+        color:chartreuse;
+
+        }
+        input[type='password']:hover
+        {
+padding:29px;
+
+        }
+        a[target='_blank']{
+            padding:40px;
+            font-size:20px;
+        }
+        a[target='_self']
+        {
+            font-size:10px;
+        }
+        li:nth-child(3n+0)
+        {
+            color: crimson;
+        }
+        li:nth-child(odd){
+            color:yellow;
+        }
+    </style>
+    <body>
+        <a href="http://www.google.com" target="_blank">go to google</a>
+        <a href="http://www.facebook.com" target="_self">go to facebook</a>
+        <div class="container">
+            
+        <form action="" class="form-controle">
+<input type="text" placeholder="enter your name">
+<input type="password" placeholder="enter your password">
+<input type="button" value="submit">
+
+
+        </form>
+        <ui>
+            <li class="box" id="box-1">box1</li>
+            <li class="box" id="box-2">box2</li>
+            <li class="box" id="box-3">box3</li>
+            <li class="box" id="box-4">box4</li>
+            <li class="box" id="box-5">box5</li>
+            <li class="box" id="box-6">box6</li>
+            <li class="box" id="box-7">box7</li>
+            <li class="box" id="box-8">box8</li>
+            <li class="box" id="box-9">box9</li>
+            <li class="box" id="box-10">box10</li>
+        </ui>
+        </div>
+    </body>
+</html:5>
