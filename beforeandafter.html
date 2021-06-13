@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            befor and after selector
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body{
+
+
+      font-size: 20px;
+background: black;
+color: white;
+margin:0;
+padding: 0;
+font-family: 'Do Hyeon', sans-serif;
+
+
+
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            width: 100%;
+            height:100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.5;
+            top:0;
+            left:0;
+
+        }
+        
+section{
+display:flex;
+flex-direction: column;
+margin: 3 34px;
+
+align-items: center;
+height: 300px;
+justify-content: center;
+
+
+}
+
+
+.navigation{
+    display:flex;
+    font-size: 20px;
+ 
+
+}
+.navigation li{
+    padding: 30px;
+    
+    
+   list-style: none;
+  
+   
+   
+}
+h1{
+    font-size: 2rem;
+    padding-top:20px;
+}
+p{
+    text-align: center;
+    padding-top: 0px;
+    margin-left:23px; 
+    
+}
+        
+    </style>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class="navigation">
+                    <li class="item">home</li>
+                    <li class="item">about</li>
+                    <li class="item">service</li>
+                    <li class="item">contact us</li>
+                </ul>
+                
+            </nav>
+           
+        </header>
+        <section>
+            <h1>
+                welcome to world of coding.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque rerum consequuntur quia reiciendis tempore doloribus quo fuga dolor. Reprehenderit!</p>
+        </section>
+        <hr>
+    </body>
+</html:5>
