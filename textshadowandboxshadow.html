@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            box-shadow and text-shadow
+        </title>
+    </head>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .card{
+            display: flex;
+            background-color: blanchedalmond;
+            
+            padding:23px 14px;
+            margin:23px 14px;
+           /* box-shadow: 20px 3px 2px 4px rgba(201, 42, 42, 0.295);*/
+           /*box-shadow: inset 20px 3px 2px 4px rgba(201, 42, 42, 0.295);*/
+           box-shadow: 20px 3px 2px 4px rgba(56, 7, 233, 0.295),30px 3px 4px 5px rebeccapurple;
+         
+
+
+        }
+        .card h2{
+            text-shadow: 2px 5px 6px red;
+
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="card" id="card-1">
+                <h2>card1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, corporis.</p>
+            </div>
+            <div class="card" id="card-2">
+                <h2>card2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ratione.</p>
+            </div>
+            <div class="card" id="card-3">
+                <h2>card3</h2>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, temporibus!
+            </div>
+        </div>
+    </body>
+</html:5>
