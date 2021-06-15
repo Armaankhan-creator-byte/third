@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            vaiable of css
+        </title>
+    </head>
+    <style>
+        /* we can defined the global variables with the help of root and all the variables in the root can be used throughout the program.*/
+        :root{
+            --basic:white;
+            --box-color:red;
+        --color:white;
+
+        }
+        .container{
+
+           
+
+            display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+            
+            
+        }
+       /*variables in css is defined as --nameofvariable:property.In .box i have defined the the vaiable name as --box-color and -color and both are local variable and can be used only at that place where its scope is present like its scope is present inside .box .container #item only.*/
+      .box{
+        --box-color:red;
+        --color:white; 
+            border: 2px solid var(--color);
+            margin:20px 5px;
+            width:200px;
+            height:100px;
+            padding: 20px 45px;
+            background-color: var(--box-color);
+        
+      }
+      .box#item{
+          color:var(--color);
+
+      }
+      h3{
+          color:var(--basic);
+          background-color:var(--box-color);
+      }
+        
+    </style>
+    <body>
+        <div class="container">
+            <div class="box" id="item">box 1</div>
+            <div class="box" id="item">box 2</div>
+            <div class="box" id="item"> box3</div>
+        </div>
+        <h3>
+            hello armaan
+        </h3>
+    </body>
+</html:5>
