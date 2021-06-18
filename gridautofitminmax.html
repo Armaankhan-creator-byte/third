@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            grid autofit minmax tutorial.
+        </title>
+    </head>
+    <style>
+        .container{
+display:grid;
+/*grid-template-columns: repeat(3,1fr);*/
+/*it autofits to screen where min is 300px and max is 1fr*/
+grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+
+grid-gap:2rem;        
+}
+        .item{
+            background-color: rgb(184, 123, 32);
+            border: 2px solid red;
+            padding:10px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="item">item-1</div>
+            <div class="item">item-2</div>
+            <div class="item">item-3</div>
+            <div class="item">item-4</div>
+            <div class="item">item-5</div>
+            <div class="item">item-6</div>
+            <div class="item">item-7</div>
+            <div class="item">item-8</div>
+            <div class="item">item-9</div>
+            <div class="item">item-10</div>
+        </div>
+    </body>
+</html:5>
