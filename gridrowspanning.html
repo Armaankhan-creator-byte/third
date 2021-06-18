@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            grid row spaaning.
+        </title>
+    </head>
+    <style>
+        .container{
+            display:grid;
+            /*is will creates 4 cols of 1 fr*/
+            grid-template-columns: repeat(4,1fr);
+           grid-template-rows: repeat(4,1fr);
+            grid-row-gap:2px;
+            grid-column-gap: 4px;
+           
+           
+
+        }
+        .item{
+            border: 2px solid red;
+            background-color: bisque;
+        }
+        .item:first-child{
+            /*this is the way of creating big box having 4 cols and 6 rows*/
+            /*grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end:6;*/
+            /*this is the short cut of creating a big box having 3 cols and 3 rows*/
+            grid-column: 1/span 3;
+            grid-row:1/span 3;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="item">item-1</div>
+            <div class="item">item-2</div>
+            <div class="item">item-3</div>
+            <div class="item">item-4</div>
+            <div class="item">item-5</div>
+            <div class="item">item-6</div>
+            <div class="item">item-7</div>
+            <div class="item">item-8</div>
+            <div class="item">item-9</div>
+            <div class="item">item-10</div>
+            <div class="item">item-2</div>
+            <div class="item">item-3</div>
+            <div class="item">item-4</div>
+            <div class="item">item-5</div>
+            <div class="item">item-6</div>
+            <div class="item">item-7</div>
+            <div class="item">item-8</div>
+            <div class="item">item-9</div>
+            <div class="item">item-10</div>
+        </div>
+    </body>
+</html:5>
