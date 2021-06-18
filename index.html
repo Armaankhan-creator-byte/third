@@ -1,70 +1,47 @@
 <!DOCTYPE html>
 <html:5>
-    <head>
-        <title>
-            media query
-        </title>
+<head>
+   <title>
+       trasform in css
+   </title>
+</head>
+<style>
+    *{
+margin: 0;
+padding: 0;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: bisque;
+        height: 70vh;
+    }
+    .box{
+        height:200px;
+        width:200px;
+        background-color: cadetblue;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       transition: all 5s ease-in-out;
 
-    
-    <style>
-.box{
-    background-color: blueviolet;
-    color:white;
-    
-    text-align: center;
-    font-size: 70px;
-    
-    
-    
-}
-@media  only screen and (max-width:300px){
-    #box-1{
-        
-        
-        display:block;
-        background-color: violet;
     }
-    
-}
-@media only screen and  (min-width:300px) and (max-width:500px)
-{
-    #box-2{
-        
-        
-        display:block;
-        background-color: teal;
+    /*tranform property is used to transform the element like rotate ,scale,skew,rotate3d etc in this property we can also used transition property also.*/
+    .box:hover{
+        transform: rotate(360deg);
+        transform: scale(2);
+        transform: skew(23deg);
+        transform: rotate3d(1, 2.0, 3.0, 360deg);
+      
     }
-}
-@media only screen and (min-width:500px) and (max-width:800px)
-{
-    #box-3{
-        
-        
-        display:block;
-        background-color:wheat;
-    }
-}
-@media only screen and (min-width:800px) and (max-width:1200px)
-{
-    #box-4{
-        
-        
-        display: block;
-        background-color: turquoise;
-    }
-}
-    </style>
-    </head>
-    <body>
-        
-
-        
-        
-            <div class="box" id="box-1">mai ek phone hu</div>
-            <div class="box" id="box-2">mai ek tablet hu</div>
-            <div class="box" id="box-3">mai ek desktop hu</div>
-            <div class="box" id="box-4">mai ek wide screen desktop hu</div>
-        
-        
-    </body>
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            this a box
+        </div>
+    </div>
+</body>
 </html:5>
