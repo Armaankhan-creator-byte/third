@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            contact-form 
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        html{scroll-behavior: smooth;
+
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            background:cover;
+            font-family: 'Baloo 2', cursive;
+        
+        }
+       
+
+        .container{
+            display:flex;
+          
+            flex-wrap: wrap;
+            flex-direction: row;
+        
+         height:70vh;
+         width:100vw;
+         background-image: url('holiday\ photo1.jpg');
+            opacity: 0.9;
+            position: relative;
+         
+         
+         
+        }
+        .logo{
+            width:1rem;
+            height:3rem;
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 10px;
+            padding-left: 19px;
+            transition:all 2s ease-in-out;
+            position:absolute;
+            box-shadow: -0.1px -0.2px 9px 0.2px rgb(250, 250, 14);
+            border:2px solid orange;
+            
+        }
+        .logo:hover{
+            transform:rotate3d(1, 5.0, 7.0, 360deg);
+            
+        }
+        .navbar{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        
+            margin-left:300px;
+            height:100px;
+            width:700px;
+            justify-content: space-evenly;
+            color:white;
+            margin-top:4px;
+            flex-wrap:wrap;
+
+        
+           
+        }
+        .navbar li{
+            list-style:none;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+.button{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    width:500px;
+    height:40px;
+    flex-wrap:wrap;
+  
+}
+.button #bt1{
+ display:flex;
+padding-right:20px;
+margin:4px 90px;
+box-shadow: 2px 3px 1px rgb(85, 2, 2);
+text-transform: uppercase;
+transition: all 2s ease-in-out;
+
+
+}
+button:nth-child(odd):hover{
+    transform:rotate3d(2, 5.0, 7.0, 360deg);
+}
+
+.button #bt2{
+    display:flex;
+    padding-right: 20px;
+    margin:4px 5px;
+    box-shadow: 2px 3px 1px rgb(82, 2, 2);
+    text-transform: uppercase;
+    transition: all 3s ease-out;
+}
+button:nth-child(2):hover{
+    transform:rotate3d(2, 5.0, 7.0, 360deg);
+}
+.contact{
+    display: flex;
+  background-image: url('haryana.jpg');
+  width:100vw;
+  height:100vh;
+  opacity: 0.9;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap:wrap;
+}
+.fo{
+    border: 2px solid coral;
+    border-radius: 10px;
+    height:200px;
+    padding:30px;
+}
+#unique{
+    margin-left:130px;
+    margin-top:30px;
+    padding:3px 40px;
+    box-shadow: 2px 3px 1px  whitesmoke;
+}
+        
+          
+            
+
+        
+    </style>
+    <body>
+        <header id="one">
+        <div class="container">
+            <div class="logo">
+                <img src="gym logo.jpg" alt="logo">
+
+            </div>
+            <div class="navbar">
+                <li><a href="#one">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#two">contact</a></li>
+            </div>
+            <div class="button">
+                <button id="bt1">call us </button>
+                <button id="bt2">email-us</button>
+
+            </div>
+        </div>
+    </header>
+    <main id="two">
+        
+        <div class="contact">
+           <h1>contact form</h1>
+            <form  class="fo"action="" method="get" >
+                <div >
+                  <label for="name">Enter your name: </label>
+                  <input type="text" name="name" id="name" required placeholder="enter your name">
+                </div>
+                <div >
+                  <label for="email">Enter your email: </label>
+                  <input type="email" name="email" id="email" required placeholder="enter your email">
+                </div>
+                <div >
+                    <label for="contact-number">Enter contact-no.: </label>
+                    <input type="number" name="contact-number" id="contact-number" required placeholder="enter contact-no.">
+                  </div>
+                  <div >
+                    <label for="email">Enter your password: </label>
+                    <input type="password" name="email" id="email" required placeholder="enter your password">
+                  </div>
+                <div>
+                 <input  id="unique"type="submit" value="Submit">
+                </div>
+              </form>   
+        </div>
+    </main>
+    </body>
+</html:5>
