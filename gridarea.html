@@ -11,9 +11,9 @@
             grid-gap:1rem;
             /*grid -template-area is used to creates area which will be occupied by class or item defined by user*/
             grid-template-areas:
-            'navbar navbar navbar navbar'
-            'section section section aside'
-            'footer footer footer footer';
+            'navbar  img  content content'
+            'section1 section section2  aside'
+            'footer footer footer aside';
 
             
         }
@@ -21,6 +21,7 @@
         {
             background-color: salmon;
             border: 2px solid wheat;
+            text-transform: uppercase;
             
         }
         #navbar{
@@ -28,12 +29,44 @@
           display:grid;
             justify-content: center;
             align-items: center;
+          
+        }
+        #img{
+            grid-area: img;
+           background-image: url('holiday\ photo1.jpg');
+            
+            height:400px;
+            opacity: 0.8;
+          box-sizing: border-box;
+          background:cover;
+          box-shadow: 2px 1px 9px orangered;
+          border-radius: 10px;
+        }
+        #content{
+            grid-area:content;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            background-color: rgb(196, 193, 193);
+        }
+        
+
+        #section1{
+            background-image: url('haryana.jpg');
+         height:400px;
+         grid-area:section1;
+         background-color: indianred;
+         opacity: 0.9;
         }
         #section{
             grid-area:section;
             display:grid;
             justify-content: center;
             align-items: center;
+           
+        }
+        #section2{
+            grid-area:section2;
         }
         #aside{
             grid-area:aside;
@@ -48,8 +81,22 @@
             <div class="item"
                  id="navbar">home 
                     about us  contact us
+
+                </div>
+                <div class="item"
+                 id="img">
+                </div>
+                 <div class="item"
+                 id="content">how to use rotary evaporator in chemical labs.
+
                 </div>
                 <div  class="item"id="section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos possimus, nemo maiores fugit eos officia, vitae quam, quia necessitatibus sed inventore iure cum nesciunt at cumque accusamus perspiciatis obcaecati adipisci expedita. Officiis laborum modi doloribus nam aliquam. Aperiam!</div>
+                <div class="item"
+                 id="section1">
+                 </div>
+                 <div class="item"
+                 id="section2">Lorem ipsum dolor sit amet.
+                </div>
                 <div class="item"id="aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias neque, esse nostrum architecto quam sint ea consequuntur tempore ipsa vitae culpa dignissimos, optio repudiandae nisi deserunt est eveniet a.</div>
                 <div class="item"id="footer">hello</div>
             </div>
