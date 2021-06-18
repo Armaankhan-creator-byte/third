@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html:5>
+    <head>
+        <title>
+            grid row tutorial
+        </title>
+    </head>
+    <style>
+        .container{
+            display:grid;
+            grid-template-rows: 100px 200px 300px;
+            grid-template-rows: 1fr 2fr auto;
+            grid-template-rows: repeat(3,100px);
+            grid-gap:2rem;
+            grid-template-columns: repeat(5,100px);
+
+            
+
+        }
+        .item{
+            background-color: cornflowerblue;
+
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="item">this is item-1</div>
+            <div class="item">this is item-2</div>
+            <div class="item">this is item-3</div>
+            <div class="item">this is item-4</div>
+            <div class="item">this is item-5</div>
+            <div class="item">this is item-6</div>
+            <div class="item">this is item-7</div>
+            <div class="item">this is item-8</div>
+            <div class="item">this is item-9</div>
+            <div class="item">this is item-4</div>
+            <div class="item">this is item-5</div>
+            <div class="item">this is item-6</div>
+            <div class="item">this is item-7</div>
+            <div class="item">this is item-8</div>
+            <div class="item">this is item-9</div>
+        </div>
+    </body>
+</html:5>
